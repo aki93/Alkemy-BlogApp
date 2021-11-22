@@ -1,0 +1,56 @@
+#btnPerfil{
+  float: right;
+}
+
+.home-users{
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+
+.todo-users{
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+
+.searchBar{
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+
+.btnTodo{
+  text-align: center;
+}
+
+.btn {
+  margin: 13px 12px 12px 10px;
+}
+
+.card{
+  border-style: solid;
+  width: 18rem;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  
+}
+
+.galleryBtn{
+float: left;
+}
+
+.userBtn{
+float: right;
+}
+
+.page-footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: white;
+  text-align: center;
+}

@@ -1,0 +1,12 @@
+<div class="container home-users">
+<div class="card" *ngFor="let album of albums; let i = index" >
+    <ul   class="list-group list-group-flush">
+      <div hidden>{{i}}</div>
+      <div >{{album.title}} </div>
+        <div >
+        <button  type="button" (click)="getPhotos(i)"   class="btn btn-success galleryBtn">Ver Galeria</button>
+        <button  type="button" [routerLink]="['/user',album.userId]"   class="btn btn-primary userBtn">Ver Usuario</button>
+      </div>
+    </ul>
+  </div>
+</div>

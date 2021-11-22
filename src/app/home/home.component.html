@@ -1,0 +1,9 @@
+<div class="container home-users">
+<div class="card " style="width: 18rem;">
+  <ul *ngFor="let user of users" class="list-group list-group-flush">
+    <li class="list-group-item">{{user.name}}
+      <button id="btnPerfil" type="button" [routerLink]="['/user',user.id]" routerLinkActive="active" class="btn btn-primary">Ver Perfil</button>
+    </li>
+  </ul>
+</div>
+</div>

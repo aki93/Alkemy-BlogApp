@@ -1,0 +1,10 @@
+<div class="container home-users">
+<div class="card" style="width: 18rem;">
+    <ul *ngFor="let album of albums; let i = index" class="list-group list-group-flush">
+      <div hidden>{{i}}</div>
+      <li class="list-group-item">{{album.title}}
+        <button id="btnPerfil" type="button" (click)="getPhotos(i)"   class="btn btn-primary">Ver Post</button>
+       </li>
+    </ul>
+  </div>
+</div>

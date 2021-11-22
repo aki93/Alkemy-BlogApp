@@ -1,0 +1,10 @@
+<div class="container home-users">
+<div class="card" style="width: 18rem;">
+    <div class="card-body">
+      <h5 class="card-title">{{post.title}}</h5>
+      <a href="#" [routerLink]="['/user',user.id]" class="card-link">{{user.name}}</a>
+      <p class="card-text">{{post.body}}</p>
+      <a href="#"[routerLink]="['/comments']" class="card-link">Comments</a>
+    </div>
+  </div>
+</div>

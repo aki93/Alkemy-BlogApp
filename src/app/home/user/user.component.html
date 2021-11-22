@@ -1,0 +1,14 @@
+<div class="container home-users">
+<div class="card" style="width: 18rem;">
+  <div class="card-body">
+    <h5 class="card-title">{{user.name}}</h5>
+    <h6 class="card-subtitle mb-2 text-muted">{{user.website}}</h6>
+    <p class="card-text">{{user.company.name}}</p>
+    <p class="card-text">{{user.company.catchPhrase}}</p>
+    <p class="card-text">{{user.company.bs}}</p>
+    <a [routerLink]="['/user',user.id,'posts']" routerLinkActive="active" class="card-link">Posts</a>
+    <a [routerLink]="['/user',user.id,'albums']" class="card-link">Albums</a>
+    <a [routerLink]="['/user',user.id,'todos']" routerLinkActive="active" class="card-link">To'DO</a>
+  </div>
+</div>
+</div>

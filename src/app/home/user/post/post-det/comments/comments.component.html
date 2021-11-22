@@ -1,0 +1,10 @@
+<div *ngFor="let coment of comments; let i = index">
+<div class="card" style="width: 18rem;">
+    <ul  class="list-group list-group-flush">
+      <div hidden>{{i}}</div>
+      <li class="list-group-item">{{coment.name}}</li>
+      <li class="list-group-item">Email:{{coment.email}}</li>
+      <li class="list-group-item">{{coment.body}}</li>
+    </ul>
+  </div>
+</div>

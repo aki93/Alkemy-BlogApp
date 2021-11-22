@@ -1,0 +1,36 @@
+
+<div class="container home-users">
+<div class="card gallery photosImg" *ngFor="let photo of photoArray ,let i = index " style="width: 18rem;">
+    <ul  class="list-group list-group-flush">
+        <div hidden>{{i}}</div>
+        <p>{{photo.title}}</p>
+        <img src={{photo.thumbnailUrl}} alt="">
+        <div class="modal fade" id="exampleModal{{i}}" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">{{photo.title}}</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <img class="img-fluid"  src={{photo.url}} alt="">
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Save changes</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      <button type="button" class="btn btn-primary" data-toggle="modal" [attr.data-target]="'#exampleModal' + i">
+       Ver Foto
+      </button>
+      <button (click)="removePhoto(i)" class="btn btn-warning">Borrar</button>
+     
+      
+    </ul>
+  </div>
+</div>
+  
